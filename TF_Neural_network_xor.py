@@ -107,11 +107,6 @@ def backprop(x, y, h1_parameters, h2_parameters, h3_parameters, out_parameters):
         # print the prediction        
         print(sess.run(forwardprop(x, h1_parameters, h2_parameters, h3_parameters, out_parameters), feed_dict={x: XOR_input}))
 
-        # save the variables to another file
-        save_path = tf.train.Saver().save(sess, "/Users/chm/Documents/Xinglu_programming/Xinglu_python/ML/Tensorflow/TF_NN/xor_2_model.ckpt")
-        print(f"Model saved in path {save_path}")
-
-
 
 
 neural_network_model()
